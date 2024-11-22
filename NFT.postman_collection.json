@@ -1,0 +1,179 @@
+{
+	"info": {
+		"_postman_id": "d38991fa-6d9a-4682-8382-b6549b3ccda0",
+		"name": "NFT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\" :\"sdnnnd\",\n    \"price\" :\"1\",\n    \"currency\" :\"sdd\",\n    \"image\" :\"sdd\",\n    \"type\" :\"image\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/nft/create",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"nft",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/nft?sortBy=price&order=DESC&page=1&limit=10",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"nft"
+					],
+					"query": [
+						{
+							"key": "priceMin",
+							"value": "2",
+							"disabled": true
+						},
+						{
+							"key": "type",
+							"value": "image",
+							"disabled": true
+						},
+						{
+							"key": "sortBy",
+							"value": "price"
+						},
+						{
+							"key": "order",
+							"value": "DESC"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "find by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/nft/69d554e9-55bf-4166-b1e0-7b1e8e961228",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"nft",
+						"69d554e9-55bf-4166-b1e0-7b1e8e961228"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "image",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\" :\"dddffffffffff\",\n    \"price\" :\"1\",\n    \"currency\" :\"sssffdd\",\n    \"image\" :\"sdd\",\n    \"type\" :\"image\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/nft/69d554e9-55bf-4166-b1e0-7b1e8e961228",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"nft",
+						"69d554e9-55bf-4166-b1e0-7b1e8e961228"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "image",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\" :\"dddffffffffff\",\n    \"price\" :\"1\",\n    \"currency\" :\"sssffdd\",\n    \"image\" :\"sdd\",\n    \"type\" :\"image\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/nft/69d554e9-55bf-4166-b1e0-7b1e8e961228",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"nft",
+						"69d554e9-55bf-4166-b1e0-7b1e8e961228"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "image",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
